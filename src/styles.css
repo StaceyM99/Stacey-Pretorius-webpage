@@ -90,10 +90,12 @@ p {
     text-decoration: underline;
 }
 
+/* Add this to your styles.css file */
 
+/* Mobile devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
 
-@media (max-width: 935px) {
-
+    /* Make the navbar smaller */
     .navbar {
         padding: 10px;
     }
@@ -106,18 +108,39 @@ p {
         font-size: 14px;
     }
 
-    h1 {
-        font-size: 24px;
+    .navbar-toggler {
+        padding: 5px;
     }
 
-    h2 {
+    .navbar-toggler-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Make the hero section smaller */
+    h2.pt-5 {
         font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
     }
 
     h3 {
         font-size: 16px;
     }
 
+    .navigation-links {
+        flex-direction: column;
+    }
+
+    .contact-link,
+    .about-link {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    /* Make the project cards smaller */
     .row {
         flex-direction: column;
     }
@@ -126,7 +149,7 @@ p {
         width: 100%;
     }
 
-    img {
+    .img-fluid {
         width: 100%;
         height: 200px;
         object-fit: cover;
@@ -136,6 +159,7 @@ p {
         font-size: 14px;
     }
 
+    /* Remove padding and margin from container */
     .container {
         padding: 0;
         margin: 0;
